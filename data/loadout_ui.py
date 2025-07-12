@@ -7,6 +7,7 @@ import subprocess
 import os
 import tkinter as tk
 from tkinter import messagebox
+import logging
 
 # --- Constants ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -14,6 +15,9 @@ LOADOUTS_FILE = os.path.join(BASE_DIR, 'loadouts.json')
 STRATAGEMS_FILE = os.path.join(BASE_DIR, 'stratagems.json')
 AHK_SCRIPT = os.path.join(BASE_DIR, 'generated_loadout.ahk')
 AHK_EXE = '/mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe'
+
+# --- Configure logging ---
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # --- Read loadouts.json and stratagems.json ---
 def read_json(path):
@@ -73,17 +77,24 @@ def direction_to_key(dir):
 # --- Reload the AHK script ---
 def reload_ahk():
     try:
-        subprocess.run([AHK_EXE, AHK_SCRIPT], check=True)
+        # Run the script as a background process
+        subprocess.Popen([AHK_EXE, AHK_SCRIPT])
+        status_label.config(text="AHK script running in the background.")
     except Exception as e:
         messagebox.showerror("AHK Error", f"Could not reload AHK script: {e}")
 
 # --- On Listbox selection ---
 def on_select(event):
+    logging.debug("on_select triggered")
     selection = event.widget.curselection()
+    logging.debug(f"Selection: {selection}")
     if not selection:
+        messagebox.showerror("Selection Error", "No loadout selected.")
         return
     idx = selection[0]
     loadout_name = event.widget.get(idx)
+    logging.debug(f"Selected loadout name: {loadout_name}")
+    selected_label.config(text=f"Selected Loadout: {loadout_name}")
     loadouts = read_json(LOADOUTS_FILE)
     if loadouts is None:
         return
@@ -93,22 +104,36 @@ def on_select(event):
     loadout = loadouts[loadout_name]
     write_ahk(loadout)
     reload_ahk()
-    messagebox.showinfo("Success", f"AHK script generated and reloaded for loadout '{loadout_name}'.")
+    status_label.config(text=f"Script generated and reloaded for loadout: {loadout_name}")
+    logging.debug(f"Loadout selected: {loadout_name}, Loadout details: {loadout}")
 
 # --- Build the Tkinter UI ---
 def main():
     root = tk.Tk()
+    # Place window in upper right
+    root.update_idletasks()
+    screen_width = root.winfo_screenwidth()
+    window_width = 500
+    window_height = 600
+    x = screen_width - window_width - 20
+    root.geometry(f"{window_width}x{window_height}+{x}+20")
     root.title("Helldivers 2 Loadout UI")
-    tk.Label(root, text="Select Loadout:").pack(pady=5)
-    listbox = tk.Listbox(root, width=40, height=15)
+    tk.Label(root, text="Select Loadout:", font=("Arial", 12, "bold")).pack(pady=5)
+    listbox = tk.Listbox(root, width=40, height=15, font=("Arial", 10))
     listbox.pack()
     # Populate listbox with loadout names
     loadouts = read_json(LOADOUTS_FILE)
+    logging.debug(f"Loadouts loaded: {loadouts}")
     if loadouts:
         for name in sorted(loadouts.keys()):
             listbox.insert(tk.END, name)
     listbox.bind('<<ListboxSelect>>', on_select)
-    tk.Button(root, text="Quit", command=root.quit).pack(pady=10)
+    global selected_label, status_label
+    selected_label = tk.Label(root, text="Selected Loadout: None", font=("Arial", 12, "italic"), fg="blue")
+    selected_label.pack(pady=10)
+    status_label = tk.Label(root, text="Status: Waiting for selection", font=("Arial", 10), fg="green")
+    status_label.pack(pady=5)
+    tk.Button(root, text="Quit", command=root.quit, font=("Arial", 10)).pack(pady=10)
     root.mainloop()
 
 if __name__ == "__main__":

@@ -1,6 +1,56 @@
 {
-  "Alpha": ["MG-43 Machine Gun", "Reinforce", "E/MG-101 HMG Emplacement", "Orbital Gatling Barrage"],
-  "Bravo": ["B-1 Supply Pack", "SOS Beacon", "FX-12 Shield Generator Relay", "Orbital Airburst Strike"],
-  "Charlie": ["LIFT-850 Jump Pack", "Resupply", "A/ARC-3 Tesla Tower", "Orbital 120MM HE Barrage"],
-  "Delta": ["APW-1 Anti-Materiel Rifle", "NUX-223 Hellbomb", "MD-6 Anti-Personnel Minefield", "Eagle Airstrike"]
+  "Alpha": [
+    "MG-43 Machine Gun",
+    "Reinforce",
+    "E/MG-101 HMG Emplacement",
+    "Orbital Gatling Barrage"
+  ],
+  "Bravo": [
+    "B-1 Supply Pack",
+    "SOS Beacon",
+    "FX-12 Shield Generator Relay",
+    "Orbital Airburst Strike"
+  ],
+  "Charlie": [
+    "LIFT-850 Jump Pack",
+    "Resupply",
+    "A/ARC-3 Tesla Tower",
+    "Orbital 120MM HE Barrage"
+  ],
+  "Delta": [
+    "APW-1 Anti-Materiel Rifle",
+    "NUX-223 Hellbomb",
+    "MD-6 Anti-Personnel Minefield",
+    "Eagle Airstrike"
+  ],
+  "Basic": [
+    "AX/LAS-5 \"Guard Dog\" Rover",
+    "Eagle 500kg Bomb",
+    "Eagle Airstrike",
+    "LAS-99 Quasar Cannon"
+  ],
+  "Testing": [
+    "AC-8 Autocannon",
+    "AX/LAS-5 \"Guard Dog\" Rover",
+    "Eagle 500kg Bomb",
+    "Eagle Airstrike"
+  ],
+  "test_2": [
+    "Eagle 500kg Bomb",
+    "Eagle Airstrike",
+    "A/MG-43 Machine Gun Sentry",
+    "AX/LAS-5 \"Guard Dog\" Rover"
+  ],
+  "Test_3": [
+    "Eagle Cluster Bomb",
+    "Eagle 110MM Rocket Pods",
+    "AX/LAS-5 \"Guard Dog\" Rover",
+    "E/GL-21 Grenadier Battlement"
+  ],
+  "Test_4": [
+    "AX/LAS-5 \"Guard Dog\" Rover",
+    "AC-8 Autocannon",
+    "FLAM-40 Flamethrower",
+    "Eagle 500kg Bomb"
+  ]
 }
