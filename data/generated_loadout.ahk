@@ -1,49 +1,45 @@
-#SingleInstance force
+#SingleInstance Ignore
 SetKeyDelay, 70
 
 ^1::
     SendInput {L down}
     SendInput {Down}
     Sleep 70
-    SendInput {Left}
+    SendInput {Up}
     Sleep 70
-    SendInput {Right}
+    SendInput {Left}
     Sleep 70
     SendInput {Up}
     Sleep 70
-    SendInput {Down}
+    SendInput {Right}
+    Sleep 70
+    SendInput {Right}
     Sleep 70
     SendInput {L up}
     Return
 
 ^2::
     SendInput {L down}
-    SendInput {Down}
-    Sleep 70
-    SendInput {Up}
-    Sleep 70
-    SendInput {Left}
-    Sleep 70
-    SendInput {Down}
-    Sleep 70
     SendInput {Up}
     Sleep 70
     SendInput {Right}
     Sleep 70
     SendInput {Down}
     Sleep 70
-    SendInput {Up}
+    SendInput {Down}
+    Sleep 70
+    SendInput {Down}
     Sleep 70
     SendInput {L up}
     Return
 
 ^3::
     SendInput {L down}
-    SendInput {Down}
-    Sleep 70
-    SendInput {Left}
-    Sleep 70
     SendInput {Up}
+    Sleep 70
+    SendInput {Right}
+    Sleep 70
+    SendInput {Down}
     Sleep 70
     SendInput {Right}
     Sleep 70
@@ -52,11 +48,13 @@ SetKeyDelay, 70
 
 ^4::
     SendInput {L down}
-    SendInput {Up}
-    Sleep 70
-    SendInput {Right}
+    SendInput {Down}
     Sleep 70
     SendInput {Down}
+    Sleep 70
+    SendInput {Up}
+    Sleep 70
+    SendInput {Left}
     Sleep 70
     SendInput {Right}
     Sleep 70

@@ -34,7 +34,7 @@ def write_ahk(loadout):
     if stratagems is None:
         return
     ahk_lines = [
-        '#SingleInstance force',
+        '#SingleInstance Ignore',
         'SetKeyDelay, 70',
         '',
     ]
@@ -77,11 +77,22 @@ def direction_to_key(dir):
 # --- Reload the AHK script ---
 def reload_ahk():
     try:
-        # Run the script as a background process
-        subprocess.Popen([AHK_EXE, AHK_SCRIPT])
-        status_label.config(text="AHK script running in the background.")
+        # Run the generated loadout script as a background process
+        if os.path.exists(AHK_SCRIPT):
+            subprocess.Popen([AHK_EXE, AHK_SCRIPT])
+        else:
+            raise FileNotFoundError(f"Script file not found: {AHK_SCRIPT}")
+
+        # Also run the basic_strats.ahk script as a background process
+        basic_strats_path = os.path.join(BASE_DIR, 'basic_strats.ahk')
+        if os.path.exists(basic_strats_path):
+            subprocess.Popen([AHK_EXE, basic_strats_path])
+        else:
+            raise FileNotFoundError(f"Script file not found: {basic_strats_path}")
+
+        status_label.config(text="AHK scripts running in the background.")
     except Exception as e:
-        messagebox.showerror("AHK Error", f"Could not reload AHK script: {e}")
+        messagebox.showerror("AHK Error", f"Could not reload AHK scripts: {e}")
 
 # --- On Listbox selection ---
 def on_select(event):
