@@ -1,8 +1,6 @@
 {
-  "Testing": [
-    "A/AC-8 Autocannon Sentry",
-    "A/ARC-3 Tesla Tower",
-    "A/G-16 Gatling Sentry",
-    "A/M-12 Mortar Sentry"
-  ]
+  "Alpha": ["MG-43 Machine Gun", "Reinforce", "E/MG-101 HMG Emplacement", "Orbital Gatling Barrage"],
+  "Bravo": ["B-1 Supply Pack", "SOS Beacon", "FX-12 Shield Generator Relay", "Orbital Airburst Strike"],
+  "Charlie": ["LIFT-850 Jump Pack", "Resupply", "A/ARC-3 Tesla Tower", "Orbital 120MM HE Barrage"],
+  "Delta": ["APW-1 Anti-Materiel Rifle", "NUX-223 Hellbomb", "MD-6 Anti-Personnel Minefield", "Eagle Airstrike"]
 }
