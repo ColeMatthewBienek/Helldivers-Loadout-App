@@ -16,13 +16,15 @@ def launch_loadout_ui():
 
 root = tk.Tk()
 root.title("Helldivers 2 Tools Launcher")
-# Place window in upper right
+# Place window in center
 root.update_idletasks()
 screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
 window_width = 300
 window_height = 150
-x = screen_width - window_width - 20  # 20px from right edge
-root.geometry(f"{window_width}x{window_height}+{x}+20")
+x = (screen_width - window_width) // 2
+y = (screen_height - window_height) // 2
+root.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
 tk.Label(root, text="Helldivers 2 Desktop Launcher", font=("Arial", 14, "bold")).pack(pady=10)
 tk.Button(root, text="Stratagem UI", command=launch_stratagem_ui, width=20, height=2).pack(pady=5)
