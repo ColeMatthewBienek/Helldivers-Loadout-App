@@ -1,6 +1,8 @@
 ;basic strats
 ; Updated: 2025-07-11 with Yellow stratagems and explicit key down/up events
+; Timing updated: 50ms key delay and 50ms sleep times
 #SingleInstance ignore
+SetKeyDelay, 50
 
 ^5:: ; Reinforce
     Send, {l down}
@@ -8,23 +10,23 @@
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {Left down}
     Sleep, 50
     Send, {Left up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -34,19 +36,19 @@
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -56,27 +58,27 @@
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Left down}
     Sleep, 50
     Send, {Left up}
-    Sleep, 100
+    Sleep, 50
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -86,23 +88,23 @@
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -112,27 +114,27 @@
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Left down}
     Sleep, 50
     Send, {Left up}
-    Sleep, 100
+    Sleep, 50
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -142,27 +144,27 @@
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Left down}
     Sleep, 50
     Send, {Left up}
-    Sleep, 100
+    Sleep, 50
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -172,35 +174,35 @@
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Left down}
     Sleep, 50
     Send, {Left up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -210,19 +212,19 @@
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -232,27 +234,27 @@
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Left down}
     Sleep, 50
     Send, {Left up}
-    Sleep, 100
+    Sleep, 50
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return
 
@@ -262,22 +264,22 @@
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Left down}
     Sleep, 50
     Send, {Left up}
-    Sleep, 100
+    Sleep, 50
     Send, {Up down}
     Sleep, 50
     Send, {Up up}
-    Sleep, 100
+    Sleep, 50
     Send, {Down down}
     Sleep, 50
     Send, {Down up}
-    Sleep, 100
+    Sleep, 50
     Send, {Right down}
     Sleep, 50
     Send, {Right up}
-    Sleep, 100
+    Sleep, 50
     Send, {l up}
     Return

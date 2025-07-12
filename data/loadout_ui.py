@@ -69,7 +69,7 @@ def write_ahk(loadout, loadout_name="Unknown"):
         '; Generated: ' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         '',
         '#SingleInstance Ignore',
-        'SetKeyDelay, 70',
+        'SetKeyDelay, 50',
         '',
     ]
     # For each stratagem in the loadout, generate a hotkey ^1::, ^2::, ...
@@ -102,7 +102,7 @@ def write_ahk(loadout, loadout_name="Unknown"):
             
             # Key up event
             ahk_lines.append(f'Send, {{{key} up}}')
-            ahk_lines.append('Sleep, 100')
+            ahk_lines.append('Sleep, 50')
             
         ahk_lines.append('Send, {l up}')
         ahk_lines.append('Return')

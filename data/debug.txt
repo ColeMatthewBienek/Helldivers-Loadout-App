@@ -250,3 +250,135 @@ WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\
 Executing command: cmd.exe /c "cscript //Nologo C:\Windows\Temp\launch_ahk.vbs"
 Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
 AHK script execution initiated successfully
+===== RELOAD AHK FUNCTION CALLED =====
+Current working directory: /mnt/c/Users/coleb/OneDrive/Desktop
+BASE_DIR: /home/coleb/projects/helldivers_strats/data
+Generated Loadout Script Path: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK Executable: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+AHK Executable (Windows path): C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe
+Script file exists: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK executable exists: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+Copied script to Windows temp directory: /mnt/c/Windows/Temp/generated_loadout.ahk
+Basic strats script found: /home/coleb/projects/helldivers_strats/data/basic_strats.ahk
+Copied basic_strats script to Windows temp: /mnt/c/Windows/Temp/basic_strats.ahk
+Created VBS launcher: /mnt/c/Windows/Temp/launch_ahk.vbs
+VBS content: 
+Set WshShell = CreateObject("WScript.Shell")
+' Launch the generated loadout script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\generated_loadout.ahk""", 0, False
+' Also launch the basic_strats script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\basic_strats.ahk""", 0, False
+
+Executing command: cmd.exe /c "cscript //Nologo C:\Windows\Temp\launch_ahk.vbs"
+Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
+AHK script execution initiated successfully
+===== RELOAD AHK FUNCTION CALLED =====
+Current working directory: /mnt/c/Users/coleb/OneDrive/Desktop
+BASE_DIR: /home/coleb/projects/helldivers_strats/data
+Generated Loadout Script Path: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK Executable: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+AHK Executable (Windows path): C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe
+Script file exists: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK executable exists: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+Copied script to Windows temp directory: /mnt/c/Windows/Temp/generated_loadout.ahk
+Basic strats script found: /home/coleb/projects/helldivers_strats/data/basic_strats.ahk
+Copied basic_strats script to Windows temp: /mnt/c/Windows/Temp/basic_strats.ahk
+Created VBS launcher: /mnt/c/Windows/Temp/launch_ahk.vbs
+VBS content: 
+Set WshShell = CreateObject("WScript.Shell")
+' Launch the generated loadout script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\generated_loadout.ahk""", 0, False
+' Also launch the basic_strats script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\basic_strats.ahk""", 0, False
+
+Executing command: cmd.exe /c "cscript //Nologo C:\Windows\Temp\launch_ahk.vbs"
+Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
+AHK script execution initiated successfully
+===== RELOAD AHK FUNCTION CALLED =====
+Current working directory: /mnt/c/Users/coleb/OneDrive/Desktop
+BASE_DIR: /home/coleb/projects/helldivers_strats/data
+Generated Loadout Script Path: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK Executable: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+AHK Executable (Windows path): C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe
+Script file exists: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK executable exists: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+Copied script to Windows temp directory: /mnt/c/Windows/Temp/generated_loadout.ahk
+Basic strats script found: /home/coleb/projects/helldivers_strats/data/basic_strats.ahk
+Copied basic_strats script to Windows temp: /mnt/c/Windows/Temp/basic_strats.ahk
+Created VBS launcher: /mnt/c/Windows/Temp/launch_ahk.vbs
+VBS content: 
+Set WshShell = CreateObject("WScript.Shell")
+' Launch the generated loadout script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\generated_loadout.ahk""", 0, False
+' Also launch the basic_strats script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\basic_strats.ahk""", 0, False
+
+Executing command: cmd.exe /c "cscript //Nologo C:\Windows\Temp\launch_ahk.vbs"
+Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
+AHK script execution initiated successfully
+===== RELOAD AHK FUNCTION CALLED =====
+Current working directory: /mnt/c/Users/coleb/OneDrive/Desktop
+BASE_DIR: /home/coleb/projects/helldivers_strats/data
+Generated Loadout Script Path: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK Executable: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+AHK Executable (Windows path): C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe
+Script file exists: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK executable exists: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+Copied script to Windows temp directory: /mnt/c/Windows/Temp/generated_loadout.ahk
+Basic strats script found: /home/coleb/projects/helldivers_strats/data/basic_strats.ahk
+Copied basic_strats script to Windows temp: /mnt/c/Windows/Temp/basic_strats.ahk
+Created VBS launcher: /mnt/c/Windows/Temp/launch_ahk.vbs
+VBS content: 
+Set WshShell = CreateObject("WScript.Shell")
+' Launch the generated loadout script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\generated_loadout.ahk""", 0, False
+' Also launch the basic_strats script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\basic_strats.ahk""", 0, False
+
+Executing command: cmd.exe /c "cscript //Nologo C:\Windows\Temp\launch_ahk.vbs"
+Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
+AHK script execution initiated successfully
+===== RELOAD AHK FUNCTION CALLED =====
+Current working directory: /mnt/c/Users/coleb/OneDrive/Desktop
+BASE_DIR: /home/coleb/projects/helldivers_strats/data
+Generated Loadout Script Path: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK Executable: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+AHK Executable (Windows path): C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe
+Script file exists: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK executable exists: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+Copied script to Windows temp directory: /mnt/c/Windows/Temp/generated_loadout.ahk
+Basic strats script found: /home/coleb/projects/helldivers_strats/data/basic_strats.ahk
+Copied basic_strats script to Windows temp: /mnt/c/Windows/Temp/basic_strats.ahk
+Created VBS launcher: /mnt/c/Windows/Temp/launch_ahk.vbs
+VBS content: 
+Set WshShell = CreateObject("WScript.Shell")
+' Launch the generated loadout script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\generated_loadout.ahk""", 0, False
+' Also launch the basic_strats script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\basic_strats.ahk""", 0, False
+
+Executing command: cmd.exe /c "cscript //Nologo C:\Windows\Temp\launch_ahk.vbs"
+Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
+AHK script execution initiated successfully
+===== RELOAD AHK FUNCTION CALLED =====
+Current working directory: /mnt/c/Users/coleb/OneDrive/Desktop
+BASE_DIR: /home/coleb/projects/helldivers_strats/data
+Generated Loadout Script Path: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK Executable: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+AHK Executable (Windows path): C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe
+Script file exists: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+AHK executable exists: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+Copied script to Windows temp directory: /mnt/c/Windows/Temp/generated_loadout.ahk
+Basic strats script found: /home/coleb/projects/helldivers_strats/data/basic_strats.ahk
+Copied basic_strats script to Windows temp: /mnt/c/Windows/Temp/basic_strats.ahk
+Created VBS launcher: /mnt/c/Windows/Temp/launch_ahk.vbs
+VBS content: 
+Set WshShell = CreateObject("WScript.Shell")
+' Launch the generated loadout script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\generated_loadout.ahk""", 0, False
+' Also launch the basic_strats script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\basic_strats.ahk""", 0, False
+
+Executing command: cmd.exe /c "cscript //Nologo C:\Windows\Temp\launch_ahk.vbs"
+Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
+AHK script execution initiated successfully

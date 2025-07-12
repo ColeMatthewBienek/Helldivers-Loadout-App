@@ -1,62 +1,62 @@
-; Helldivers 2 Loadout: 500kg, laser dog, airstrike, quasar
-; Generated: 2025-07-11 22:17:46
+; Helldivers 2 Loadout: 500,laserdog,airstrike,quasar
+; Generated: 2025-07-11 23:04:10
 
 #SingleInstance Ignore
-SetKeyDelay, 70
+SetKeyDelay, 50
 
-^1:: ; AX/LAS-5 "Guard Dog" Rover
+^1:: ; Eagle 500kg Bomb
 Send, {l down}
+Sleep, 50
+Send, {Up down}
+Sleep, 50
+Send, {Up up}
+Sleep, 50
+Send, {Right down}
+Sleep, 50
+Send, {Right up}
 Sleep, 50
 Send, {Down down}
 Sleep, 50
 Send, {Down up}
-Sleep, 100
-Send, {Up down}
 Sleep, 50
-Send, {Up up}
-Sleep, 100
-Send, {Left down}
+Send, {Down down}
 Sleep, 50
-Send, {Left up}
-Sleep, 100
-Send, {Up down}
+Send, {Down up}
 Sleep, 50
-Send, {Up up}
-Sleep, 100
-Send, {Right down}
+Send, {Down down}
 Sleep, 50
-Send, {Right up}
-Sleep, 100
-Send, {Right down}
+Send, {Down up}
 Sleep, 50
-Send, {Right up}
-Sleep, 100
 Send, {l up}
 Return
 
-^2:: ; Eagle 500kg Bomb
+^2:: ; AX/LAS-5 "Guard Dog" Rover
 Send, {l down}
+Sleep, 50
+Send, {Down down}
+Sleep, 50
+Send, {Down up}
 Sleep, 50
 Send, {Up down}
 Sleep, 50
 Send, {Up up}
-Sleep, 100
+Sleep, 50
+Send, {Left down}
+Sleep, 50
+Send, {Left up}
+Sleep, 50
+Send, {Up down}
+Sleep, 50
+Send, {Up up}
+Sleep, 50
 Send, {Right down}
 Sleep, 50
 Send, {Right up}
-Sleep, 100
-Send, {Down down}
 Sleep, 50
-Send, {Down up}
-Sleep, 100
-Send, {Down down}
+Send, {Right down}
 Sleep, 50
-Send, {Down up}
-Sleep, 100
-Send, {Down down}
+Send, {Right up}
 Sleep, 50
-Send, {Down up}
-Sleep, 100
 Send, {l up}
 Return
 
@@ -66,19 +66,19 @@ Sleep, 50
 Send, {Up down}
 Sleep, 50
 Send, {Up up}
-Sleep, 100
+Sleep, 50
 Send, {Right down}
 Sleep, 50
 Send, {Right up}
-Sleep, 100
+Sleep, 50
 Send, {Down down}
 Sleep, 50
 Send, {Down up}
-Sleep, 100
+Sleep, 50
 Send, {Right down}
 Sleep, 50
 Send, {Right up}
-Sleep, 100
+Sleep, 50
 Send, {l up}
 Return
 
@@ -88,22 +88,22 @@ Sleep, 50
 Send, {Down down}
 Sleep, 50
 Send, {Down up}
-Sleep, 100
+Sleep, 50
 Send, {Down down}
 Sleep, 50
 Send, {Down up}
-Sleep, 100
+Sleep, 50
 Send, {Up down}
 Sleep, 50
 Send, {Up up}
-Sleep, 100
+Sleep, 50
 Send, {Left down}
 Sleep, 50
 Send, {Left up}
-Sleep, 100
+Sleep, 50
 Send, {Right down}
 Sleep, 50
 Send, {Right up}
-Sleep, 100
+Sleep, 50
 Send, {l up}
 Return

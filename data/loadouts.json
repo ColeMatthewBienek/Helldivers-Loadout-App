@@ -10,5 +10,11 @@
     "Eagle 500kg Bomb",
     "Eagle Airstrike",
     "LAS-99 Quasar Cannon"
+  ],
+  "500,laserdog,airstrike,quasar": [
+    "Eagle 500kg Bomb",
+    "AX/LAS-5 \"Guard Dog\" Rover",
+    "Eagle Airstrike",
+    "LAS-99 Quasar Cannon"
   ]
 }
