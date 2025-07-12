@@ -13,7 +13,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOADOUTS_FILE = os.path.join(BASE_DIR, 'loadouts.json')
 STRATAGEMS_FILE = os.path.join(BASE_DIR, 'stratagems.json')
 AHK_SCRIPT = os.path.join(BASE_DIR, 'generated_loadout.ahk')
-AHK_EXE = 'AutoHotkey.exe'  # Adjust if AHK is not in PATH
+AHK_EXE = '/mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe'
 
 # --- Read loadouts.json and stratagems.json ---
 def read_json(path):
@@ -73,7 +73,7 @@ def direction_to_key(dir):
 # --- Reload the AHK script ---
 def reload_ahk():
     try:
-        subprocess.run([AHK_EXE, '/reload', AHK_SCRIPT], check=True)
+        subprocess.run([AHK_EXE, AHK_SCRIPT], check=True)
     except Exception as e:
         messagebox.showerror("AHK Error", f"Could not reload AHK script: {e}")
 
