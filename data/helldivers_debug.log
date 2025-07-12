@@ -411,3 +411,30 @@ WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\
 2025-07-11 21:59:38,411 - DEBUG - Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
 2025-07-11 21:59:38,526 - DEBUG - AHK script execution initiated successfully
 2025-07-11 21:59:38,526 - DEBUG - Loadout selected: 500kg, laser dog, airstrike, quasar, Loadout details: ['AX/LAS-5 "Guard Dog" Rover', 'Eagle 500kg Bomb', 'Eagle Airstrike', 'LAS-99 Quasar Cannon']
+2025-07-11 22:17:44,062 - DEBUG - Loadouts loaded: {'Alpha': ['MG-43 Machine Gun', 'Reinforce', 'E/MG-101 HMG Emplacement', 'Orbital Gatling Barrage'], '500kg, laser dog, airstrike, quasar': ['AX/LAS-5 "Guard Dog" Rover', 'Eagle 500kg Bomb', 'Eagle Airstrike', 'LAS-99 Quasar Cannon']}
+2025-07-11 22:17:46,573 - DEBUG - on_select triggered
+2025-07-11 22:17:46,573 - DEBUG - Selection: (0,)
+2025-07-11 22:17:46,573 - DEBUG - Selected loadout name: 500kg, laser dog, airstrike, quasar
+2025-07-11 22:17:46,574 - DEBUG - ===== RELOAD AHK FUNCTION CALLED =====
+2025-07-11 22:17:46,574 - DEBUG - Current working directory: /mnt/c/Users/coleb/OneDrive/Desktop
+2025-07-11 22:17:46,574 - DEBUG - BASE_DIR: /home/coleb/projects/helldivers_strats/data
+2025-07-11 22:17:46,574 - DEBUG - Generated Loadout Script Path: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+2025-07-11 22:17:46,574 - DEBUG - AHK Executable: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+2025-07-11 22:17:46,575 - DEBUG - AHK Executable (Windows path): C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe
+2025-07-11 22:17:46,575 - DEBUG - Script file exists: /home/coleb/projects/helldivers_strats/data/generated_loadout.ahk
+2025-07-11 22:17:46,577 - DEBUG - AHK executable exists: /mnt/c/Program Files/AutoHotkey/v1.1.37.02/AutoHotkeyU32.exe
+2025-07-11 22:17:46,586 - DEBUG - Copied script to Windows temp directory: /mnt/c/Windows/Temp/generated_loadout.ahk
+2025-07-11 22:17:46,586 - DEBUG - Basic strats script found: /home/coleb/projects/helldivers_strats/data/basic_strats.ahk
+2025-07-11 22:17:46,589 - DEBUG - Copied basic_strats script to Windows temp: /mnt/c/Windows/Temp/basic_strats.ahk
+2025-07-11 22:17:46,591 - DEBUG - Created VBS launcher: /mnt/c/Windows/Temp/launch_ahk.vbs
+2025-07-11 22:17:46,592 - DEBUG - VBS content: 
+Set WshShell = CreateObject("WScript.Shell")
+' Launch the generated loadout script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\generated_loadout.ahk""", 0, False
+' Also launch the basic_strats script
+WshShell.Run """C:\Program Files\AutoHotkey\v1.1.37.02\AutoHotkeyU32.exe"" ""C:\Windows\Temp\basic_strats.ahk""", 0, False
+
+2025-07-11 22:17:46,592 - DEBUG - Executing command: cmd.exe /c "cscript //Nologo C:\Windows\Temp\launch_ahk.vbs"
+2025-07-11 22:17:46,592 - DEBUG - Subprocess result: <Popen: returncode: None args: 'cmd.exe /c "cscript //Nologo C:\\Windows\\Te...>
+2025-07-11 22:17:46,721 - DEBUG - AHK script execution initiated successfully
+2025-07-11 22:17:46,722 - DEBUG - Loadout selected: 500kg, laser dog, airstrike, quasar, Loadout details: ['AX/LAS-5 "Guard Dog" Rover', 'Eagle 500kg Bomb', 'Eagle Airstrike', 'LAS-99 Quasar Cannon']
