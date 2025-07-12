@@ -1,3 +1,6 @@
+; Helldivers 2 Loadout: 500kg, laser dog, airstrike, quasar
+; Generated: 2025-07-11 21:22:16
+
 #SingleInstance Ignore
 SetKeyDelay, 70
 

@@ -1,3 +1,4 @@
+;basic strats
 #SingleInstance ignore
 SetKeyDelay, 70
 
