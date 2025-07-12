@@ -83,29 +83,42 @@ def write_ahk(loadout, loadout_name="Unknown"):
         if not found:
             ahk_lines.append(f'; ERROR: Stratagem not found: {strat_name}')
             continue
-        ahk_lines.append(f'^%d::' % idx)
-        ahk_lines.append('    SendInput {L down}')
+        
+        # Add hotkey with stratagem name as comment if available
+        ahk_lines.append(f'^{idx}:: ; {strat_name}')
+        ahk_lines.append('Send, {l down}')
+        ahk_lines.append('Sleep, 50')
+        
+        # Each direction key needs down/up events with sleep timings
         for dir in keys:
-            key = direction_to_key(dir)
+            key = direction_to_key_improved(dir)
             if not key:
-                ahk_lines.append(f'    ; ERROR: Unknown direction: {dir}')
+                ahk_lines.append(f'; ERROR: Unknown direction: {dir}')
                 continue
-            ahk_lines.append(f'    SendInput {key}')
-            ahk_lines.append('    Sleep 70')
-        ahk_lines.append('    SendInput {L up}')
-        ahk_lines.append('    Return')
+                
+            # Key down event
+            ahk_lines.append(f'Send, {{{key} down}}')
+            ahk_lines.append('Sleep, 50')
+            
+            # Key up event
+            ahk_lines.append(f'Send, {{{key} up}}')
+            ahk_lines.append('Sleep, 100')
+            
+        ahk_lines.append('Send, {l up}')
+        ahk_lines.append('Return')
         ahk_lines.append('')
+        
     # Write the script
     with open(AHK_SCRIPT, 'w') as f:
         f.write('\n'.join(ahk_lines))
 
-# --- Helper: Map direction to AHK key ---
-def direction_to_key(dir):
+# --- Helper: Map direction to AHK key with improved format ---
+def direction_to_key_improved(dir):
     return {
-        'up': '{Up}',
-        'down': '{Down}',
-        'left': '{Left}',
-        'right': '{Right}'
+        'up': 'Up',
+        'down': 'Down',
+        'left': 'Left',
+        'right': 'Right'
     }.get(dir, '')
 
 # --- Reload the AHK script ---
