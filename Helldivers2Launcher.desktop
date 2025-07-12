@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Helldivers 2 Launcher
+Comment=Launch Helldivers 2 Stratagem and Loadout Tools
+Exec=python3 /home/coleb/projects/helldivers_strats/launcher.py
+Icon=utilities-terminal
+Terminal=false
+Categories=Game;Utility;
